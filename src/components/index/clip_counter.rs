@@ -11,6 +11,9 @@ pub fn IndexClipCounter() -> Html {
     let clips: String = rclips.clips.to_string();
 
     html! {
-        <div>{ format!("Clips: {clips}") }</div>
+        <div>
+            <span class="text-xl font-bold">{ "Clips: " }</span>
+            <span class="text-xl">{ clips }</span>
+        </div>
     }
 }
